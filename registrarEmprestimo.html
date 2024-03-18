@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Registrar Emprestimo - LH Library Manager</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <aside id="sidebar">
+        <div class="d-flex">
+          <button class="toggle-btn" type="button">
+            <i class="lni lni-grid-alt"></i>
+          </button>
+          <div class="sidebar-logo">
+            <a href="inicio.html">LH Library Manager</a>
+          </div>
+        </div>
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="inicio.html" class="sidebar-link">
+              <i class="lni lni-home"></i>
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="cadastrarCategorias.html" class="sidebar-link">
+              <i class="lni lni-tab"></i>
+              <span>Cadastrar Categorias</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="consultaCategorias.html" class="sidebar-link">
+              <i class="lni lni-search-alt"></i>
+              <span>Consulta Categorias</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="cadastrarLivros.html" class="sidebar-link">
+              <i class="lni lni-book"></i>
+              <span>Cadastrar Livros</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="consultaLivros.html" class="sidebar-link">
+              <i class="lni lni-search-alt"></i>
+              <span>Consulta Livros</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="registrarEmprestimo.html" class="sidebar-link">
+              <i class="lni lni-agenda"></i>
+              <span>Registrar Empréstimo</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="entrar.html" class="sidebar-link">
+              <i class="lni lni-power-switch"></i>
+              <span>Sair</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="main p-3">
+        <section class="d-block">
+          <h1 class="m-3 fs-1 roboto-bold">
+            <span><img src="img/books-svgrepo-com 1.svg" alt="" /></span>
+            Registrar Empréstimo
+          </h1>
+          <div class="container p-4 mt-2">
+            <div class="row">
+              <div class="col-md-6 bg-light shadow p-4 mb-5">
+                <form>
+                  <div class="row mb-3">
+                    <div class="col">
+                      <label for="inputLivro" class="form-label">Titulo do Livro</label>
+                      <select class="form-select" id="inputLivro">
+                        <option selected>Escolha um Livro</option>
+                        <option value="1">Spring Data</option>
+                        <option value="2">SOAP</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputLeitor" class="form-label">Membro</label>
+                    <select class="form-select" id="inputLeitor">
+                      <option selected>Escolha um Membro</option>
+                      <option value="1">Maria</option>
+                      <option value="2">Carlos</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Registrar
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

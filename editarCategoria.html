@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link rel="stylesheet"  href="css/bootstrap.min.css" >
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Editar Categoria - LH Library Management</title>
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <aside id="sidebar">
+      <div class="d-flex">
+        <button class="toggle-btn" type="button">
+          <i class="lni lni-grid-alt"></i>
+        </button>
+        <div class="sidebar-logo">
+          <a href="inicio.html">LH Library Manager</a>
+        </div>
+      </div>
+      <ul class="sidebar-nav">
+        <li class="sidebar-item">
+          <a href="inicio.html" class="sidebar-link">
+            <i class="lni lni-home"></i>
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="cadastrarCategorias.html" class="sidebar-link">
+            <i class="lni lni-tab"></i>
+            <span>Cadastrar Categorias</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="consultaCategorias.html" class="sidebar-link">
+            <i class="lni lni-search-alt"></i>
+            <span>Consulta Categorias</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="cadastrarLivros.html" class="sidebar-link">
+            <i class="lni lni-book"></i>
+            <span>Cadastrar Livros</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="consultaLivros.html" class="sidebar-link">
+            <i class="lni lni-search-alt"></i>
+            <span>Consulta Livros</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="registrarEmprestimo.html" class="sidebar-link">
+            <i class="lni lni-agenda"></i>
+            <span>Registrar Empréstimo</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="entrar.html" class="sidebar-link">
+            <i class="lni lni-power-switch"></i>
+            <span>Sair</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="main p-3">
+      <section class="d-block">
+        <h1 class="m-3 fs-1 roboto-bold"> <span><img src="img/register-svgrepo-com.svg" alt=""></span> Editar Categoria</h1>
+        <div class="container p-4 mt-2 ">
+          <div class="row">
+            <div class="col-md-6 bg-light p-4 shadow">
+              <form>
+                <div class="row mb-3">
+                  <div class="col-9">
+                    <label for="inputNome" class="form-label">Nome da Categoria</label>
+                    <input type="text" class="form-control" id="inputCategoria" placeholder="Digite a Categoria">
+                  </div>
+                  <button type="submit" class="btn btn-primary align-self-end ms-2 mt-2">Atualizar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
