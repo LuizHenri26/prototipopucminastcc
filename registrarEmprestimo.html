@@ -7,7 +7,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Registrar Emprestimo - LH Library Manager</title>
+    <title>Registrar Emprestimo - LH Library Management</title>
   </head>
 
   <body>
@@ -18,16 +18,10 @@
             <i class="lni lni-grid-alt"></i>
           </button>
           <div class="sidebar-logo">
-            <a href="inicio.html">LH Library Manager</a>
+            <a href="cadastrarCategorias.html">LH Library Management</a>
           </div>
         </div>
         <ul class="sidebar-nav">
-          <li class="sidebar-item">
-            <a href="inicio.html" class="sidebar-link">
-              <i class="lni lni-home"></i>
-              <span>Inicio</span>
-            </a>
-          </li>
           <li class="sidebar-item">
             <a href="cadastrarCategorias.html" class="sidebar-link">
               <i class="lni lni-tab"></i>
@@ -59,7 +53,7 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="entrar.html" class="sidebar-link">
+            <a href="index.html" class="sidebar-link">
               <i class="lni lni-power-switch"></i>
               <span>Sair</span>
             </a>
@@ -79,7 +73,7 @@
                 <form>
                   <div class="row mb-3">
                     <div class="col">
-                      <label for="inputLivro" class="form-label">Titulo do Livro</label>
+                      <label for="inputLivro" class="form-label">Titulo do Livro *</label>
                       <select class="form-select" id="inputLivro">
                         <option selected>Escolha um Livro</option>
                         <option value="1">Spring Data</option>
@@ -88,12 +82,32 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <label for="inputLeitor" class="form-label">Membro</label>
+                    <label for="inputLeitor" class="form-label">Membro *</label>
                     <select class="form-select" id="inputLeitor">
                       <option selected>Escolha um Membro</option>
                       <option value="1">Maria</option>
                       <option value="2">Carlos</option>
                     </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputTitulo" class="form-label">Data de Emprestimo</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputTitulo"
+                      value="10/03/24"
+                      disabled
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputTitulo" class="form-label">Data de Prevista para Devolução</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputTitulo"
+                      value="24/03/24"
+                      disabled
+                    />
                   </div>
                   <button type="submit" class="btn btn-primary">
                     Registrar

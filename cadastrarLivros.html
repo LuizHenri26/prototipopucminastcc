@@ -8,7 +8,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Cadastrar Livros - LH Library Manager</title>
+    <title>Cadastrar Livros - LH Library Management</title>
   </head>
 
   <body>
@@ -19,16 +19,10 @@
             <i class="lni lni-grid-alt"></i>
           </button>
           <div class="sidebar-logo">
-            <a href="inicio.html">LH Library Manager</a>
+            <a href="cadastrarCategorias.html">LH Library Management</a>
           </div>
         </div>
         <ul class="sidebar-nav">
-          <li class="sidebar-item">
-            <a href="inicio.html" class="sidebar-link">
-              <i class="lni lni-home"></i>
-              <span>Inicio</span>
-            </a>
-          </li>
           <li class="sidebar-item">
             <a href="cadastrarCategorias.html" class="sidebar-link">
               <i class="lni lni-tab"></i>
@@ -60,7 +54,7 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="entrar.html" class="sidebar-link">
+            <a href="index.html" class="sidebar-link">
               <i class="lni lni-power-switch"></i>
               <span>Sair</span>
             </a>
@@ -80,7 +74,7 @@
                 <form>
                   <div class="mb-3">
                     <label for="inputCategoria" class="form-label"
-                      >Categoria</label
+                      >Categoria *</label
                     >
                     <select class="form-select" id="inputCategoria">
                       <option selected>Escolha uma categoria</option>
@@ -94,7 +88,7 @@
                     </select>
                   </div>
                   <div class="mb-3">
-                    <label for="inputTitulo" class="form-label">Título do Livro</label>
+                    <label for="inputTitulo" class="form-label">Título do Livro *</label>
                     <input
                       type="text"
                       class="form-control"
@@ -102,9 +96,18 @@
                       placeholder="Digite o título do livro"
                     />
                   </div>
+                  <div class="mb-3">
+                    <label for="inputTitulo" class="form-label">ISBN *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputTitulo"
+                      placeholder="Digite o numero do isbn"
+                    />
+                  </div>
                   <div class="row mb-3">
                     <div class="col">
-                      <label for="inputAutor" class="form-label">Autor</label>
+                      <label for="inputAutor" class="form-label">Autor *</label>
                       <input
                         type="text"
                         class="form-control"
@@ -116,7 +119,7 @@
                   <div class="row mb-3">
                     <div class="col">
                       <label for="inputNumPaginas" class="form-label"
-                        >Número de Páginas</label
+                        >Número de Páginas *</label
                       >
                       <input
                         type="text"
@@ -127,7 +130,7 @@
                     </div>
                     <div class="col">
                       <label for="inputEditora" class="form-label"
-                        >Editora</label
+                        >Nome da Editora *</label
                       >
                       <input
                         type="text"
@@ -139,12 +142,12 @@
                   </div>
                   <div class="col mb-2">
                     <label for="inputSetorLivro" class="form-label"
-                      >Setor Livro</label
+                      >Setor *</label
                     >
                     <select class="form-select" id="inputSetorLivro">
                       <option selected>Escolha um Setor</option>
-                      <option value="1">Pratilheira A</option>
-                      <option value="2">Pratilheira B</option>
+                      <option value="1">Setor A Inferior</option>
+                      <option value="2">Setor A Superior</option>
                     </select>
                   </div>
                   <button type="submit" class="btn btn-primary">

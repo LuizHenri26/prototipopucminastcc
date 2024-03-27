@@ -8,7 +8,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Consulta Livros - LH Library Manager</title>
+    <title>Consulta Livros - LH Library Management</title>
   </head>
 
   <body>
@@ -19,16 +19,10 @@
             <i class="lni lni-grid-alt"></i>
           </button>
           <div class="sidebar-logo">
-            <a href="inicio.html">LH Library Manager</a>
+            <a href="cadastrarCategorias.html">LH Library Management</a>
           </div>
         </div>
         <ul class="sidebar-nav">
-          <li class="sidebar-item">
-            <a href="inicio.html" class="sidebar-link">
-              <i class="lni lni-home"></i>
-              <span>Inicio</span>
-            </a>
-          </li>
           <li class="sidebar-item">
             <a href="cadastrarCategorias.html" class="sidebar-link">
               <i class="lni lni-tab"></i>
@@ -60,7 +54,7 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="entrar.html" class="sidebar-link">
+            <a href="index.html" class="sidebar-link">
               <i class="lni lni-power-switch"></i>
               <span>Sair</span>
             </a>
@@ -80,14 +74,12 @@
                 <form>
                   <div class="row mb-3">
                     <div class="col">
-                      <label for="inputNomeLivro" class="form-label"
-                        >Titulo do Livro</label
-                      >
+                      <label for="inputNomeLivro" class="form-label">Titulo do Livro</label>
                       <input
                         type="text"
                         class="form-control"
                         id="inputNome"
-                        placeholder="Digite o nome do livro"
+                        placeholder="Digite o titulo do livro"
                       />
                     </div>
                     <div class="col">
@@ -99,22 +91,6 @@
                         placeholder="Digite o nome do autor"
                       />
                     </div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="inputCategoria" class="form-label"
-                      >Categoria</label
-                    >
-                    <select class="form-select" id="inputCategoria">
-                      <option selected>Escolha uma categoria</option>
-                      <option value="1">Ficção</option>
-                      <option value="2">Não-ficção</option>
-                      <option value="3">Romance</option>
-                      <option value="4">Mistério</option>
-                      <option value="5">Biografia</option>
-                      <option value="6">História</option>
-                      <option value="7">Ciência</option>
-                      <option value="8">Programação</option>
-                    </select>
                   </div>
                   <button type="submit" class="btn btn-primary">
                     Procurar
@@ -134,17 +110,17 @@
                 <th>Titulo do Livro</th>
                 <th>Autor</th>
                 <th>Status</th>
+                <th>Setor</th>
                 <th>Ação</th>
               </tr>
               <tr>
                 <td>Programação</td>
                 <td>Spring Boot</td>
                 <td>Fernando Boaglio</td>
-                <th>Disponivel</th>
+                <td>Disponivel</td>
+                <td>Setor A Inferior</td>
                 <th class="d-flex align-center justify-content-center gap-2">
-                  <a href="editarLivro.html" data-buttonEdit
-                    ><img src="img/edit.svg" alt="" /></a
-                  ><a href="./" data-buttonTrash
+                  <a href="./" data-buttonTrash
                     ><img src="img/trash.svg" alt=""
                   /></a>
                 </th>
@@ -153,11 +129,10 @@
                 <td>Programação</td>
                 <td>Teoria dos grafos</td>
                 <td>João Paulo Maida</td>
-                <th>Disponivel</th>
+                <td>Indisponivel</td>
+                <td>Setor A Superior</td>
                 <th class="d-flex align-center justify-content-center gap-2">
-                  <a href="editarLivro.html" data-buttonEdit
-                    ><img src="img/edit.svg" alt="" /></a
-                  ><a href="./" data-buttonTrash
+                  <a href="./" data-buttonTrash
                     ><img src="img/trash.svg" alt=""
                   /></a>
                 </th>
