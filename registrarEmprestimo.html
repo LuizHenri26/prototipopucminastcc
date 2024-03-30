@@ -18,20 +18,20 @@
             <i class="lni lni-grid-alt"></i>
           </button>
           <div class="sidebar-logo">
-            <a href="cadastrarCategorias.html">LH Library Management</a>
+            <a href="consultaMembros.html">LH Library Management</a>
           </div>
         </div>
         <ul class="sidebar-nav">
           <li class="sidebar-item">
-            <a href="cadastrarCategorias.html" class="sidebar-link">
-              <i class="lni lni-tab"></i>
-              <span>Cadastrar Categorias</span>
+            <a href="cadastrarMembros.html" class="sidebar-link">
+              <i class="lni lni-customer"></i>
+              <span>Cadastrar Membros</span>
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="consultaCategorias.html" class="sidebar-link">
+            <a href="consultaMembros.html" class="sidebar-link">
               <i class="lni lni-search-alt"></i>
-              <span>Consulta Categorias</span>
+              <span>Consulta Membros</span>
             </a>
           </li>
           <li class="sidebar-item">
@@ -50,6 +50,12 @@
             <a href="registrarEmprestimo.html" class="sidebar-link">
               <i class="lni lni-agenda"></i>
               <span>Registrar Empréstimo</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="registrarDevolucao.html" class="sidebar-link">
+              <i class="lni lni-layout"></i>
+              <span>Registrar Devolução</span>
             </a>
           </li>
           <li class="sidebar-item">
@@ -73,7 +79,9 @@
                 <form>
                   <div class="row mb-3">
                     <div class="col">
-                      <label for="inputLivro" class="form-label">Titulo do Livro *</label>
+                      <label for="inputLivro" class="form-label"
+                        >Titulo do Livro *</label
+                      >
                       <select class="form-select" id="inputLivro">
                         <option selected>Escolha um Livro</option>
                         <option value="1">Spring Data</option>
@@ -89,25 +97,31 @@
                       <option value="2">Carlos</option>
                     </select>
                   </div>
-                  <div class="mb-3">
-                    <label for="inputTitulo" class="form-label">Data de Emprestimo</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputTitulo"
-                      value="10/03/24"
-                      disabled
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="inputTitulo" class="form-label">Data de Prevista para Devolução</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputTitulo"
-                      value="24/03/24"
-                      disabled
-                    />
+                  <div class="row mb-3">
+                    <div class="col-sm">
+                      <label for="inputTitulo" class="form-label"
+                        >Data de Emprestimo</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputTitulo"
+                        value="10/03/24"
+                        disabled
+                      />
+                    </div>
+                    <div class="col-sm">
+                      <label for="inputTitulo" class="form-label"
+                        >Data de Prevista para Devolução</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputTitulo"
+                        value="24/03/24"
+                        disabled
+                      />
+                    </div>
                   </div>
                   <button type="submit" class="btn btn-primary">
                     Registrar

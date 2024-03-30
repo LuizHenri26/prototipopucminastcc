@@ -38,8 +38,36 @@
         </ul>
       </aside>
 
-
       <div class="main p-3">
+        <section class="d-block">
+          <h1 class="m-3 fs-1 roboto-bold">
+            <span><img src="img/books-svgrepo-com 1.svg" alt="" /></span>
+            Consulta Livros
+          </h1>
+          <div class="container p-4 mt-2">
+            <div class="row">
+              <div class="col-md-6 bg-light p-4 shadow">
+                <form>
+                  <div class="row mb-3">
+                    <div class="col">
+                      <label for="inputNomeLivro" class="form-label">Titulo do Livro</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputNome"
+                        placeholder="Digite o titulo do livro"
+                      />
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Procurar
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section class="d-block">
           <h1 class="m-3 fs-1 roboto-bold">
             <span><img src="img/books-svgrepo-com 1.svg" alt="" /></span>
@@ -49,28 +77,34 @@
         <section class="d-flex container-sm flex-column">
           <div class="table-wrapper">
             <table
-              class="table table-striped table-responsive table-bordered table-hover text-center container-sm p-4 mt-2"
+              class="table ttable-bordered table-responsive table-bordered text-center container-sm p-4 mt-2"
             >
               <tr class="table-blue table-active text-uppercase">
                 <th>Categoria</th>
                 <th>Titulo do Livro</th>
                 <th>Autor</th>
-                <th>Status</th>
+                <th>Editora</th>
+                <th>Idioma</th>
                 <th>Setor</th>
+                <th>Status</th>
               </tr>
               <tr>
-                <td>Programação</td>
+                <td>Tecnologia</td>
                 <td>Spring Boot</td>
                 <td>Fernando Boaglio</td>
-                <td>Disponivel</td>
-                <td>Setor A Inferior</td>
+                <td>Casa do Código</td>
+                <td>Português-BR</td>
+                <td>Setor A - Inferior</td>
+                <td>Disponível</td>
               </tr>
               <tr>
-                <td>Programação</td>
+                <td>Tecnologia</td>
                 <td>Teoria dos grafos</td>
                 <td>João Paulo Maida</td>
-                <td>Indisponivel</td>
-                <td>Setor A Superior</td>
+                <td>Casa do Código</td>
+                <td>Português-BR</td>
+                <td>Setor A - Superior</td>
+                <td>Emprestado</td>
               </tr>
             </table>
           </div>

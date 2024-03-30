@@ -8,7 +8,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Consulta Livros - LH Library Management</title>
+    <title>Consulta Livros - LH Library Manager</title>
   </head>
 
   <body>
@@ -72,7 +72,7 @@
         <section class="d-block">
           <h1 class="m-3 fs-1 roboto-bold">
             <span><img src="img/books-svgrepo-com 1.svg" alt="" /></span>
-            Consulta Livros
+            Consulta Membros
           </h1>
           <div class="container p-4 mt-2">
             <div class="row">
@@ -80,14 +80,14 @@
                 <form>
                   <div class="row mb-3">
                     <div class="col">
-                      <label for="inputNomeLivro" class="form-label"
-                        >Titulo do Livro</label
+                      <label for="inputNomeMembro" class="form-label"
+                        >Nome do Membro</label
                       >
                       <input
                         type="text"
                         class="form-control"
-                        id="inputNome"
-                        placeholder="Digite o titulo do livro"
+                        id="inputNomeMembro"
+                        placeholder="Digite o nome do livro"
                       />
                     </div>
                   </div>
@@ -102,51 +102,37 @@
         <section class="d-flex container-sm flex-column">
           <div class="table-wrapper">
             <table
-              class="table table-bordered  table-responsive table-bordered text-center container-sm p-4 mt-2"
+              class="table table-bordered table-responsive table-bordered text-center container-sm p-4 mt-2"
             >
               <tr class="table-blue table-active text-uppercase">
-                <th>Categoria</th>
-                <th>Titulo do Livro</th>
-                <th>Autor</th>
-                <th>Editora</th>
-                <th>Idioma</th>
-                <th>Setor</th>
-                <th>Status</th>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Data de Nascimento</th>
                 <th>Ação</th>
               </tr>
               <tr>
-                <td>Tecnologia</td>
-                <td>Spring Boot</td>
-                <td>Fernando Boaglio</td>
-                <td>Casa do Código</td>
-                <td>Português-BR</td>
-                <td>Setor A - Inferior</td>
-                <td>Disponível</td>
-                <th class="d-flex align-center justify-content-center gap-2">
-                  <a href="editarLivro.html" data-buttonEdit
-                    ><img src="img/edit.svg" alt=""
-                  /></a>
-                  <a href="./" data-buttonTrash
+                <td>Aurélio</td>
+                <td>111.000.222-52</td>
+                <td>01/04/1986</td>
+                <td class="d-flex align-center justify-content-center gap-2">
+                  <a href="editarMembro.html" data-buttonEdit
+                    ><img src="img/edit.svg" alt="" /></a
+                  ><a href="./" data-buttonTrash
                     ><img src="img/trash.svg" alt=""
                   /></a>
-                </th>
+                </td>
               </tr>
               <tr>
-                <td>Tecnologia</td>
-                <td>Teoria dos grafos</td>
-                <td>João Paulo Maida</td>
-                <td>Casa do Código</td>
-                <td>Português-BR</td>
-                <td>Setor A - Superior</td>
-                <td>Emprestado</td>
-                <th class="d-flex align-center justify-content-center gap-2">
-                  <a href="editarLivro.html" data-buttonEdit
-                    ><img src="img/edit.svg" alt=""
-                  /></a>
-                  <a href="./" data-buttonTrash
+                <td>Maria</td>
+                <td>112.022.658-34</td>
+                <td>05/09/1982</td>
+                <td class="d-flex align-center justify-content-center gap-2">
+                  <a href="editarMembro.html" data-buttonEdit
+                    ><img src="img/edit.svg" alt="" /></a
+                  ><a href="./" data-buttonTrash
                     ><img src="img/trash.svg" alt=""
                   /></a>
-                </th>
+                </td>
               </tr>
             </table>
           </div>
